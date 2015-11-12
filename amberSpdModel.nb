@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       157,          7]
-NotebookDataLength[     51599,       1197]
-NotebookOptionsPosition[     51221,       1179]
-NotebookOutlinePosition[     51575,       1195]
-CellTagsIndexPosition[     51532,       1192]
+NotebookDataLength[     51614,       1202]
+NotebookOptionsPosition[     51236,       1184]
+NotebookOutlinePosition[     51590,       1200]
+CellTagsIndexPosition[     51547,       1197]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -102,43 +102,44 @@ Cell[BoxData[
         RowBox[{"amberSpd", "[", 
          RowBox[{"[", 
           RowBox[{"All", ",", "1"}], "]"}], "]"}]}], ",", "1"}], "]"}]}], " ",
-     ";", "       ", 
-    RowBox[{"(*", "\:5cf0\:503c\:5904\:5bf9\:5e94\:7684\:6ce2\:957f", "*)"}], 
-    "\[IndentingNewLine]", "\[IndentingNewLine]", 
-    RowBox[{"(*", 
-     RowBox[{
-      RowBox[{"Nearest", "[", 
+     ";"}], "       ", 
+   RowBox[{"(*", "\:5cf0\:503c\:5904\:5bf9\:5e94\:7684\:6ce2\:957f", "*)"}], 
+   "\[IndentingNewLine]", "\[IndentingNewLine]", 
+   RowBox[{"(*", 
+    RowBox[{
+     RowBox[{"Nearest", "[", 
+      RowBox[{
+       RowBox[{"amberSpd", "[", 
+        RowBox[{"[", 
+         RowBox[{"All", ",", "2"}], "]"}], "]"}], ",", "0.5", ",", "4"}], 
+      "]"}], "\[IndentingNewLine]", 
+     RowBox[{"Nearest", "[", 
+      RowBox[{
+       RowBox[{"amberSpd", "[", 
+        RowBox[{"[", 
+         RowBox[{"All", ",", "2"}], "]"}], "]"}], ",", "0.5", ",", "2"}], 
+      "]"}], "\[IndentingNewLine]", 
+     RowBox[{"Nearest", "[", 
+      RowBox[{
        RowBox[{
         RowBox[{"amberSpd", "[", 
          RowBox[{"[", 
-          RowBox[{"All", ",", "2"}], "]"}], "]"}], ",", "0.5", ",", "4"}], 
-       "]"}], "\[IndentingNewLine]", 
-      RowBox[{"Nearest", "[", 
+          RowBox[{"All", ",", "2"}], "]"}], "]"}], "\[Rule]", 
+        RowBox[{"amberSpd", "[", 
+         RowBox[{"[", 
+          RowBox[{"All", ",", "1"}], "]"}], "]"}]}], ",", "0.5", ",", "4"}], 
+      "]"}], "\[IndentingNewLine]", 
+     RowBox[{"Nearest", "[", 
+      RowBox[{
        RowBox[{
         RowBox[{"amberSpd", "[", 
          RowBox[{"[", 
-          RowBox[{"All", ",", "2"}], "]"}], "]"}], ",", "0.5", ",", "2"}], 
-       "]"}], "\[IndentingNewLine]", 
-      RowBox[{"Nearest", "[", 
-       RowBox[{
-        RowBox[{
-         RowBox[{"amberSpd", "[", 
-          RowBox[{"[", 
-           RowBox[{"All", ",", "2"}], "]"}], "]"}], "\[Rule]", 
-         RowBox[{"amberSpd", "[", 
-          RowBox[{"[", 
-           RowBox[{"All", ",", "1"}], "]"}], "]"}]}], ",", "0.5", ",", "4"}], 
-       "]"}], "\[IndentingNewLine]", 
-      RowBox[{"Nearest", "[", 
-       RowBox[{
-        RowBox[{
-         RowBox[{"amberSpd", "[", 
-          RowBox[{"[", 
-           RowBox[{"All", ",", "2"}], "]"}], "]"}], "\[Rule]", 
-         RowBox[{"amberSpd", "[", 
-          RowBox[{"[", 
-           RowBox[{"All", ",", "1"}], "]"}], "]"}]}], ",", "0.5", ",", "2"}], 
-       "]"}]}], "*)"}], "\[IndentingNewLine]", "\[IndentingNewLine]", 
+          RowBox[{"All", ",", "2"}], "]"}], "]"}], "\[Rule]", 
+        RowBox[{"amberSpd", "[", 
+         RowBox[{"[", 
+          RowBox[{"All", ",", "1"}], "]"}], "]"}]}], ",", "0.5", ",", "2"}], 
+      "]"}]}], "*)"}], "\[IndentingNewLine]", "\[IndentingNewLine]", 
+   RowBox[{
     RowBox[{"amberHwList", "=", 
      RowBox[{"Nearest", "[", 
       RowBox[{
@@ -149,57 +150,60 @@ Cell[BoxData[
         RowBox[{"amberSpd", "[", 
          RowBox[{"[", 
           RowBox[{"All", ",", "1"}], "]"}], "]"}]}], ",", "0.5", ",", "2"}], 
-      "]"}]}], ";", "    ", 
-    RowBox[{
-    "(*", "spd\:6570\:503c\:4e3a\:5cf0\:503c\:6ce2\:957f\:7684\:4e00\:534a\
+      "]"}]}], ";"}], "    ", 
+   RowBox[{
+   "(*", "spd\:6570\:503c\:4e3a\:5cf0\:503c\:6ce2\:957f\:7684\:4e00\:534a\
 \:7684\:5de6\:53f3\:4e24\:70b9\:6ce2\:957f\:5750\:6807", "*)"}], 
-    "\[IndentingNewLine]", 
+   "\[IndentingNewLine]", 
+   RowBox[{
     RowBox[{"amberHwL", "=", 
      RowBox[{"amberCenterLamda", "-", 
       RowBox[{"amberHwList", "[", 
-       RowBox[{"[", "1", "]"}], "]"}]}]}], ";", "        ", 
-    RowBox[{"(*", "\:6ce2\:957f\:534a\:5bbd\:5de6\:8fb9", "*)"}], 
-    "\[IndentingNewLine]", 
+       RowBox[{"[", "1", "]"}], "]"}]}]}], ";"}], "        ", 
+   RowBox[{"(*", "\:6ce2\:957f\:534a\:5bbd\:5de6\:8fb9", "*)"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
     RowBox[{"amberHwR", "=", 
      RowBox[{
       RowBox[{"amberHwList", "[", 
-       RowBox[{"[", "2", "]"}], "]"}], "-", "amberCenterLamda"}]}], " ", ";", 
-    "     ", 
-    RowBox[{"(*", "\:6ce2\:957f\:534a\:5bbd\:53f3\:8fb9", "*)"}], 
-    "\[IndentingNewLine]", 
+       RowBox[{"[", "2", "]"}], "]"}], "-", "amberCenterLamda"}]}], " ", 
+    ";"}], "     ", 
+   RowBox[{"(*", "\:6ce2\:957f\:534a\:5bbd\:53f3\:8fb9", "*)"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
     RowBox[{"amberHW", "=", 
      RowBox[{
       RowBox[{"amberHwList", "[", 
        RowBox[{"[", "2", "]"}], "]"}], "-", 
       RowBox[{"amberHwList", "[", 
-       RowBox[{"[", "1", "]"}], "]"}]}]}], ";", "            ", 
-    RowBox[{"(*", "\:534a\:6ce2\:5bbd", "*)"}], "\[IndentingNewLine]", 
-    "\[IndentingNewLine]", 
-    RowBox[{"gAmberLed", "=", 
-     RowBox[{"ListPlot", "[", 
-      RowBox[{"amberSpd", ",", 
-       RowBox[{"PlotRange", "\[Rule]", 
-        RowBox[{"{", 
-         RowBox[{
-          RowBox[{"{", 
-           RowBox[{"380", ",", "780"}], "}"}], ",", 
-          RowBox[{"{", 
-           RowBox[{"0", ",", "1"}], "}"}]}], "}"}]}], ",", 
-       RowBox[{"(*", 
+       RowBox[{"[", "1", "]"}], "]"}]}]}], ";"}], "            ", 
+   RowBox[{"(*", "\:534a\:6ce2\:5bbd", "*)"}], "\[IndentingNewLine]", 
+   "\[IndentingNewLine]", 
+   RowBox[{"gAmberLed", "=", 
+    RowBox[{"ListPlot", "[", 
+     RowBox[{"amberSpd", ",", 
+      RowBox[{"PlotRange", "\[Rule]", 
+       RowBox[{"{", 
         RowBox[{
-         RowBox[{"AxesOrigin", "\[Rule]", 
-          RowBox[{"{", 
-           RowBox[{
-            RowBox[{"370", "*", 
-             RowBox[{"10", "^", 
-              RowBox[{"-", "9"}]}]}], ",", "0"}], "}"}]}], ","}], "*)"}], 
-       RowBox[{"AxesLabel", "\[Rule]", 
-        RowBox[{"{", 
-         RowBox[{"\"\<\[Lambda]\>\"", ",", "\"\<spd\>\""}], "}"}]}], ",", 
-       RowBox[{"PlotStyle", "\[Rule]", 
-        RowBox[{"{", "Orange", "}"}]}], ",", 
-       RowBox[{"PlotLegends", "\[Rule]", "\"\<Expressions\>\""}]}], "]"}]}]}],
-    "\[IndentingNewLine]"}]}]], "Input",
+         RowBox[{"{", 
+          RowBox[{"380", ",", "780"}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"0", ",", "1"}], "}"}]}], "}"}]}], ",", 
+      RowBox[{"(*", 
+       RowBox[{
+        RowBox[{"AxesOrigin", "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"370", "*", 
+            RowBox[{"10", "^", 
+             RowBox[{"-", "9"}]}]}], ",", "0"}], "}"}]}], ","}], "*)"}], 
+      RowBox[{"AxesLabel", "\[Rule]", 
+       RowBox[{"{", 
+        RowBox[{"\"\<\[Lambda]\>\"", ",", "\"\<spd\>\""}], "}"}]}], ",", 
+      RowBox[{"PlotStyle", "\[Rule]", 
+       RowBox[{"{", "Orange", "}"}]}], ",", 
+      RowBox[{"PlotLegends", "\[Rule]", "\"\<Expressions\>\""}]}], "]"}]}], 
+   "\[IndentingNewLine]"}]}]], "Input",
  CellChangeTimes->{{3.653992977846338*^9, 3.6539930123655186`*^9}, {
    3.6539931640459557`*^9, 3.6539931690412617`*^9}, {3.6539932353965936`*^9, 
    3.6539932392461414`*^9}, {3.6539934260696135`*^9, 3.653993528261444*^9}, {
@@ -486,7 +490,8 @@ N5V404g3nXj3EW8GrZcHaD0n6fH/AUMDgyg=
    3.656282845112402*^9, {3.656282891507127*^9, 3.65628291420718*^9}, {
    3.6562849504524727`*^9, 3.656284956000157*^9}, {3.6562852106894255`*^9, 
    3.6562852289381456`*^9}, 3.6562853787434626`*^9, {3.6562854704190345`*^9, 
-   3.6562854932982063`*^9}, 3.656285579412842*^9, 3.656285633699375*^9}]
+   3.6562854932982063`*^9}, 3.656285579412842*^9, 3.656285633699375*^9, 
+   3.6562984896684103`*^9}]
 }, Open  ]],
 
 Cell[BoxData[
@@ -1195,10 +1200,10 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[CellGroupData[{
-Cell[579, 22, 10446, 234, 472, "Input"],
-Cell[11028, 258, 13789, 230, 262, "Output"]
+Cell[579, 22, 10433, 238, 472, "Input"],
+Cell[11015, 262, 13817, 231, 262, "Output"]
 }, Open  ]],
-Cell[24832, 491, 26385, 686, 1692, "Input"]
+Cell[24847, 496, 26385, 686, 1692, "Input"]
 }
 ]
 *)
