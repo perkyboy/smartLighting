@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       157,          7]
-NotebookDataLength[     71745,       1852]
-NotebookOptionsPosition[     71103,       1826]
-NotebookOutlinePosition[     71457,       1842]
-CellTagsIndexPosition[     71414,       1839]
+NotebookDataLength[     72144,       1855]
+NotebookOptionsPosition[     71501,       1829]
+NotebookOutlinePosition[     71855,       1845]
+CellTagsIndexPosition[     71812,       1842]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -431,12 +431,11 @@ NNiWwEnf9eiFWigStk9jWheVO/4Wq1sP/n/wfQyDsP\>\""}], ";"}],
       RowBox[{"(", 
        RowBox[{"X", "+", 
         RowBox[{"15", "*", "Y"}], "+", 
-        RowBox[{"3", "*", "Z"}]}], ")"}]}]}]}], ";"}], "\[IndentingNewLine]", 
-  "\n", 
+        RowBox[{"3", "*", "Z"}]}], ")"}]}]}]}], ";"}], "\n", "\n", 
   RowBox[{"(*", 
    RowBox[{
    "calc", " ", "CCT", "  ", "using", " ", "2002", " ", "CODATA", " ", 
-    "recommended", " ", "values"}], "*)"}]}], "\n", 
+    "recommended", " ", "values"}], "*)"}]}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{"h", "=", 
    RowBox[{"6.6260693", "*", 
@@ -870,7 +869,7 @@ NNiWwEnf9eiFWigStk9jWheVO/4Wq1sP/n/wfQyDsP\>\""}], ";"}],
        RowBox[{"Print", "[", 
         RowBox[{"\"\<CCT=\>\"", ",", "Tc"}], "]"}]}], "}"}]}], 
     "\[IndentingNewLine]", "]"}], ";"}], "\[IndentingNewLine]", 
-  "\[IndentingNewLine]", "\[IndentingNewLine]", "\n", 
+  "\[IndentingNewLine]", "\n", "\[IndentingNewLine]", 
   RowBox[{"(*", 
    RowBox[{"calc", " ", "CRI"}], "*)"}]}], "\[IndentingNewLine]", 
  RowBox[{
@@ -944,126 +943,129 @@ NNiWwEnf9eiFWigStk9jWheVO/4Wq1sP/n/wfQyDsP\>\""}], ";"}],
       RowBox[{
        RowBox[{">", "5000"}], ",", "begin"}], "*)"}], 
      RowBox[{"{", "\[IndentingNewLine]", 
-      RowBox[{
-       RowBox[{"If", "[", 
-        RowBox[{
-         RowBox[{"Tc", "\[LessEqual]", "25000"}], ",", "\[IndentingNewLine]", 
-         RowBox[{"(*", 
-          RowBox[{
-           RowBox[{"\[LessEqual]", "25000"}], ",", "begin"}], "*)"}], 
-         RowBox[{"{", "\[IndentingNewLine]", 
-          RowBox[{
-           RowBox[{
-            RowBox[{"If", "[", 
-             RowBox[{
-              RowBox[{"Tc", "\[LessEqual]", "7000"}], ",", 
-              RowBox[{"{", 
-               RowBox[{
-                RowBox[{"Print", "[", "\"\<5000<=Tc<=7000\>\"", "]"}], ",", 
-                RowBox[{
-                 RowBox[{"xd", "=", 
-                  RowBox[{
-                   RowBox[{
-                    RowBox[{"-", "4.6070"}], "*", 
-                    RowBox[{
-                    RowBox[{"10", "^", "9"}], "/", 
-                    RowBox[{"Tc", "^", "3"}]}]}], "+", 
-                   RowBox[{"2.9678", "*", 
-                    RowBox[{
-                    RowBox[{"10", "^", "6"}], "/", 
-                    RowBox[{"Tc", "^", "2"}]}]}], "+", 
-                   RowBox[{"0.09911", "*", 
-                    RowBox[{
-                    RowBox[{"10", "^", "3"}], "/", "Tc"}]}], "+", 
-                   "0.244063"}]}], ";"}]}], "}"}], ",", "\[IndentingNewLine]", 
-              RowBox[{"(*", 
-               RowBox[{"else", ",", 
-                RowBox[{">", "7000"}]}], "*)"}], "\[IndentingNewLine]", 
-              RowBox[{"{", 
-               RowBox[{
-                RowBox[{"Print", "[", "\"\<7000<=Tc<=25000\>\"", "]"}], ",", 
-                RowBox[{
-                 RowBox[{"xd", "=", 
-                  RowBox[{
-                   RowBox[{
-                    RowBox[{"-", "2.0064"}], "*", 
-                    RowBox[{
-                    RowBox[{"10", "^", "9"}], "/", 
-                    RowBox[{"Tc", "^", "3"}]}]}], "+", 
-                   RowBox[{"1.9018", "*", 
-                    RowBox[{
-                    RowBox[{"10", "^", "6"}], "/", 
-                    RowBox[{"Tc", "^", "2"}]}]}], "+", 
-                   RowBox[{"0.24748", "*", 
-                    RowBox[{
-                    RowBox[{"10", "^", "3"}], "/", "Tc"}]}], "+", 
-                   "0.237040"}]}], ";"}]}], "}"}]}], "\[IndentingNewLine]", 
-             "]"}], ";", "\[IndentingNewLine]", 
-            RowBox[{"Print", "[", "\"\<5000<=Tc<=25000\>\"", "]"}]}], ",", 
-           "\[IndentingNewLine]", 
-           RowBox[{
-            RowBox[{"yd", "=", 
-             RowBox[{
-              RowBox[{
-               RowBox[{"-", "3.000"}], "*", "xd", "*", "xd"}], "+", 
-              RowBox[{"2.870", "*", "xd"}], "-", "0.275"}]}], ";", 
-            "\[IndentingNewLine]", " ", 
-            RowBox[{"M1", "=", 
-             RowBox[{
-              RowBox[{"(", 
-               RowBox[{
-                RowBox[{"-", "1.3515"}], "-", 
-                RowBox[{"1.7703", "*", "xd"}], "+", 
-                RowBox[{"5.9114", "*", "yd"}]}], ")"}], "/", 
-              RowBox[{"(", 
-               RowBox[{"0.0241", "+", 
-                RowBox[{"0.2562", "*", "xd"}], "-", 
-                RowBox[{"0.7341", "*", "yd"}]}], ")"}]}]}], ";", "\n", 
-            "               ", 
-            RowBox[{"M2", "=", 
-             RowBox[{
-              RowBox[{"(", 
-               RowBox[{"0.0300", "-", 
-                RowBox[{"31.4424", "*", "xd"}], "+", 
-                RowBox[{"30.0717", "*", "yd"}]}], ")"}], "/", 
-              RowBox[{"(", 
-               RowBox[{"0.0241", "+", 
-                RowBox[{"0.2562", "*", "xd"}], "-", 
-                RowBox[{"0.7341", "*", "yd"}]}], ")"}]}]}], ";", 
-            "\[IndentingNewLine]", " ", 
-            RowBox[{"spdref", "=", 
-             RowBox[{"sunCompositionS0", "+", 
-              RowBox[{"M1", "*", "sunCompositionS1"}], "+", 
-              RowBox[{"M2", "*", "sunCompositionS2"}]}]}], ";"}]}], "\n", 
-          "\t", 
-          RowBox[{"(*", 
-           RowBox[{
-            RowBox[{"spdref", "=", 
-             RowBox[{"interp1", 
-              RowBox[{"(", 
-               RowBox[{"wavelength", ",", "spdref", ",", "wavelength_spd"}], 
-               ")"}]}]}], ";", "\n", "\t", 
-            RowBox[{"spdref", "=", "0.0"}], ";"}], "*)"}], 
-          "\[IndentingNewLine]", "}"}]}], "]"}], 
-       RowBox[{"(*", 
-        RowBox[{
-         RowBox[{"\[LessEqual]", "25000"}], ",", "end"}], "*)"}], ",", 
-       "\[IndentingNewLine]", "\[IndentingNewLine]", 
-       RowBox[{"(*", 
-        RowBox[{
-         RowBox[{">", "25000"}], ",", "begin"}], "*)"}], 
-       RowBox[{"{", 
-        RowBox[{
-         RowBox[{"Print", "[", "\"\<Tc>25000\>\"", "]"}], ",", 
-         RowBox[{
-          RowBox[{"R", "=", 
-           RowBox[{"-", "1"}]}], ";", 
-          RowBox[{"Return", "[", 
-           RowBox[{"-", "2"}], "]"}]}]}], "}"}]}], 
-      RowBox[{"(*", 
+      RowBox[{"If", "[", 
        RowBox[{
-        RowBox[{">", "25000"}], ",", "end"}], "*)"}], "\[IndentingNewLine]", 
-      "\[IndentingNewLine]", "}"}]}], 
+        RowBox[{"Tc", "\[LessEqual]", "25000"}], ",", "\[IndentingNewLine]", 
+        RowBox[{"(*", 
+         RowBox[{
+          RowBox[{"\[LessEqual]", "25000"}], ",", "begin"}], "*)"}], 
+        RowBox[{"{", "\[IndentingNewLine]", 
+         RowBox[{
+          RowBox[{
+           RowBox[{"If", "[", 
+            RowBox[{
+             RowBox[{"Tc", "\[LessEqual]", "7000"}], ",", 
+             RowBox[{"{", 
+              RowBox[{
+               RowBox[{"Print", "[", "\"\<5000<=Tc<=7000\>\"", "]"}], ",", 
+               RowBox[{
+                RowBox[{"xd", "=", 
+                 RowBox[{
+                  RowBox[{
+                   RowBox[{"-", "4.6070"}], "*", 
+                   RowBox[{
+                    RowBox[{"10", "^", "9"}], "/", 
+                    RowBox[{"Tc", "^", "3"}]}]}], "+", 
+                  RowBox[{"2.9678", "*", 
+                   RowBox[{
+                    RowBox[{"10", "^", "6"}], "/", 
+                    RowBox[{"Tc", "^", "2"}]}]}], "+", 
+                  RowBox[{"0.09911", "*", 
+                   RowBox[{
+                    RowBox[{"10", "^", "3"}], "/", "Tc"}]}], "+", 
+                  "0.244063"}]}], ";"}]}], "}"}], ",", "\[IndentingNewLine]", 
+             RowBox[{"(*", 
+              RowBox[{"else", ",", 
+               RowBox[{">", "7000"}]}], "*)"}], "\[IndentingNewLine]", 
+             RowBox[{"{", 
+              RowBox[{
+               RowBox[{"Print", "[", "\"\<7000<=Tc<=25000\>\"", "]"}], ",", 
+               RowBox[{
+                RowBox[{"xd", "=", 
+                 RowBox[{
+                  RowBox[{
+                   RowBox[{"-", "2.0064"}], "*", 
+                   RowBox[{
+                    RowBox[{"10", "^", "9"}], "/", 
+                    RowBox[{"Tc", "^", "3"}]}]}], "+", 
+                  RowBox[{"1.9018", "*", 
+                   RowBox[{
+                    RowBox[{"10", "^", "6"}], "/", 
+                    RowBox[{"Tc", "^", "2"}]}]}], "+", 
+                  RowBox[{"0.24748", "*", 
+                   RowBox[{
+                    RowBox[{"10", "^", "3"}], "/", "Tc"}]}], "+", 
+                  "0.237040"}]}], ";"}]}], "}"}]}], "\[IndentingNewLine]", 
+            "]"}], ";", "\[IndentingNewLine]", 
+           RowBox[{"Print", "[", "\"\<5000<=Tc<=25000\>\"", "]"}]}], ",", 
+          "\[IndentingNewLine]", 
+          RowBox[{
+           RowBox[{"yd", "=", 
+            RowBox[{
+             RowBox[{
+              RowBox[{"-", "3.000"}], "*", "xd", "*", "xd"}], "+", 
+             RowBox[{"2.870", "*", "xd"}], "-", "0.275"}]}], ";", 
+           "\[IndentingNewLine]", " ", 
+           RowBox[{"M1", "=", 
+            RowBox[{
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{"-", "1.3515"}], "-", 
+               RowBox[{"1.7703", "*", "xd"}], "+", 
+               RowBox[{"5.9114", "*", "yd"}]}], ")"}], "/", 
+             RowBox[{"(", 
+              RowBox[{"0.0241", "+", 
+               RowBox[{"0.2562", "*", "xd"}], "-", 
+               RowBox[{"0.7341", "*", "yd"}]}], ")"}]}]}], ";", "\n", 
+           "               ", 
+           RowBox[{"M2", "=", 
+            RowBox[{
+             RowBox[{"(", 
+              RowBox[{"0.0300", "-", 
+               RowBox[{"31.4424", "*", "xd"}], "+", 
+               RowBox[{"30.0717", "*", "yd"}]}], ")"}], "/", 
+             RowBox[{"(", 
+              RowBox[{"0.0241", "+", 
+               RowBox[{"0.2562", "*", "xd"}], "-", 
+               RowBox[{"0.7341", "*", "yd"}]}], ")"}]}]}], ";", 
+           "\[IndentingNewLine]", " ", 
+           RowBox[{"spdref", "=", 
+            RowBox[{"sunCompositionS0", "+", 
+             RowBox[{"M1", "*", "sunCompositionS1"}], "+", 
+             RowBox[{"M2", "*", "sunCompositionS2"}]}]}], ";", "\n", 
+           "              ", 
+           RowBox[{"tmpSpdref", "=", 
+            RowBox[{"sunCompositionS0", "+", 
+             RowBox[{"M1", "*", "sunCompositionS1"}], "+", 
+             RowBox[{"M2", "*", "sunCompositionS2"}]}]}], ";", "\n", 
+           "\[IndentingNewLine]", 
+           RowBox[{"spdref", "=", 
+            RowBox[{
+             RowBox[{"Interpolation", "[", 
+              RowBox[{
+               RowBox[{"{", 
+                RowBox[{"sunCompositionWaveLength", ",", "tmpSpdref"}], "}"}],
+                "//", "Transpose"}], "]"}], "[", "cie1931WaveLength", "]"}]}],
+            ";"}]}], "\[IndentingNewLine]", "}"}], 
+        RowBox[{"(*", 
+         RowBox[{
+          RowBox[{"\[LessEqual]", "25000"}], ",", "end"}], "*)"}], ",", 
+        "\[IndentingNewLine]", "\[IndentingNewLine]", 
+        RowBox[{"(*", 
+         RowBox[{
+          RowBox[{">", "25000"}], ",", "begin"}], "*)"}], 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"Print", "[", "\"\<Tc>25000\>\"", "]"}], ",", 
+          RowBox[{
+           RowBox[{"R", "=", 
+            RowBox[{"-", "1"}]}], ";", 
+           RowBox[{"Return", "[", 
+            RowBox[{"-", "2"}], "]"}]}]}], "}"}]}], 
+       RowBox[{"(*", 
+        RowBox[{
+         RowBox[{">", "25000"}], ",", "end"}], "*)"}], "]"}], 
+      "\[IndentingNewLine]", "\[IndentingNewLine]", "}"}]}], 
     RowBox[{"(*", 
      RowBox[{
       RowBox[{">", "5000"}], ",", "end"}], "*)"}], "\[IndentingNewLine]", 
@@ -1757,7 +1759,8 @@ DmGNzSYEIsr2U805TzXnbLAOZ1eYPByoP/C4Z3Bek=\>\""}],
    3.6562218496856613`*^9, 3.6562218552013273`*^9}, 3.6562230832930603`*^9, 
    3.6562231212548366`*^9, {3.656223239145372*^9, 3.656223241015132*^9}, {
    3.6562244145030403`*^9, 3.656224578152896*^9}, {3.656232023991517*^9, 
-   3.656232106471139*^9}, 3.656241400843361*^9}],
+   3.656232106471139*^9}, 3.656241400843361*^9, {3.65630844184772*^9, 
+   3.656308474835594*^9}}],
 
 Cell[CellGroupData[{
 
@@ -1768,7 +1771,7 @@ Cell[BoxData[
    "0.37949821607199075`"}],
   SequenceForm["x=", 0.39758898015538424`, ";    y=", 0.37949821607199075`],
   Editable->False]], "Print",
- CellChangeTimes->{3.656241435576873*^9}],
+ CellChangeTimes->{3.656241435576873*^9, 3.656308478239851*^9}],
 
 Cell[BoxData[
  InterpretationBox[
@@ -1777,17 +1780,17 @@ Cell[BoxData[
    "0.3368925080383407`"}],
   SequenceForm["u=", 0.23530149905025147`, ";    v=", 0.3368925080383407],
   Editable->False]], "Print",
- CellChangeTimes->{3.656241435805024*^9}],
+ CellChangeTimes->{3.656241435576873*^9, 3.656308478454995*^9}],
 
 Cell[BoxData[
  InterpretationBox[
   RowBox[{"\<\"CCT=\"\>", "\[InvisibleSpace]", "3583.080167672832`"}],
   SequenceForm["CCT=", 3583.080167672832],
   Editable->False]], "Print",
- CellChangeTimes->{3.6562414358150315`*^9}],
+ CellChangeTimes->{3.656241435576873*^9, 3.656308478467004*^9}],
 
 Cell[BoxData["\<\"Tc<5000\"\>"], "Print",
- CellChangeTimes->{3.6562414358620615`*^9}],
+ CellChangeTimes->{3.656241435576873*^9, 3.6563084784990253`*^9}],
 
 Cell[BoxData[
  InterpretationBox[
@@ -1796,7 +1799,7 @@ Cell[BoxData[
    "0.3368925080383407`"}],
   SequenceForm["uk=", 0.23530149905025147`, ";    vk=", 0.3368925080383407],
   Editable->False]], "Print",
- CellChangeTimes->{3.656241435965129*^9}],
+ CellChangeTimes->{3.656241435576873*^9, 3.6563084785880823`*^9}],
 
 Cell[BoxData[
  InterpretationBox[
@@ -1805,7 +1808,7 @@ Cell[BoxData[
    "0.33989832993496866`"}],
   SequenceForm["ur=", 0.23397622775520568`, ";    vr=", 0.33989832993496866`],
   Editable->False]], "Print",
- CellChangeTimes->{3.6562414359921484`*^9}],
+ CellChangeTimes->{3.656241435576873*^9, 3.656308478616101*^9}],
 
 Cell[BoxData[
  InterpretationBox[
@@ -1813,14 +1816,14 @@ Cell[BoxData[
    "\[InvisibleSpace]", "\<\"  (It should <5.4*10^-3)\"\>"}],
   SequenceForm["DC=", 0.0032850128279384876`, "  (It should <5.4*10^-3)"],
   Editable->False]], "Print",
- CellChangeTimes->{3.656241436519499*^9}],
+ CellChangeTimes->{3.656241435576873*^9, 3.6563084790794086`*^9}],
 
 Cell[BoxData[
  InterpretationBox[
   RowBox[{"\<\"CRI=\"\>", "\[InvisibleSpace]", "83.62106869590309`"}],
   SequenceForm["CRI=", 83.62106869590309],
   Editable->False]], "Print",
- CellChangeTimes->{3.656241436532508*^9}]
+ CellChangeTimes->{3.656241435576873*^9, 3.656308479095419*^9}]
 }, Open  ]]
 }, Open  ]]
 },
@@ -1842,16 +1845,16 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[CellGroupData[{
-Cell[579, 22, 68222, 1737, 7538, "Input"],
+Cell[579, 22, 68444, 1740, 7558, "Input"],
 Cell[CellGroupData[{
-Cell[68826, 1763, 346, 7, 23, "Print"],
-Cell[69175, 1772, 343, 7, 23, "Print"],
-Cell[69521, 1781, 221, 5, 23, "Print"],
-Cell[69745, 1788, 85, 1, 23, "Print"],
-Cell[69833, 1791, 347, 7, 23, "Print"],
-Cell[70183, 1800, 352, 7, 23, "Print"],
-Cell[70538, 1809, 315, 6, 23, "Print"],
-Cell[70856, 1817, 219, 5, 23, "Print"]
+Cell[69048, 1766, 368, 7, 23, "Print"],
+Cell[69419, 1775, 365, 7, 23, "Print"],
+Cell[69787, 1784, 241, 5, 23, "Print"],
+Cell[70031, 1791, 107, 1, 23, "Print"],
+Cell[70141, 1794, 371, 7, 23, "Print"],
+Cell[70515, 1803, 372, 7, 23, "Print"],
+Cell[70890, 1812, 339, 6, 23, "Print"],
+Cell[71232, 1820, 241, 5, 23, "Print"]
 }, Open  ]]
 }, Open  ]]
 }
