@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       157,          7]
-NotebookDataLength[     49192,       1136]
-NotebookOptionsPosition[     48816,       1118]
-NotebookOutlinePosition[     49170,       1134]
-CellTagsIndexPosition[     49127,       1131]
+NotebookDataLength[     51599,       1197]
+NotebookOptionsPosition[     51221,       1179]
+NotebookOutlinePosition[     51575,       1195]
+CellTagsIndexPosition[     51532,       1192]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -43,11 +43,12 @@ Cell[BoxData[
      RowBox[{"Max", "[", 
       RowBox[{"amberSpd", "[", 
        RowBox[{"[", 
-        RowBox[{"All", ",", "2"}], "]"}], "]"}], "]"}]}], " ", ";", "   ", 
-    RowBox[{"(*", 
-     RowBox[{
-     "\:76f8\:5bf9\:5149\:8c31\:5cf0\:503c\:5927\:5c0f", "\:ff0c", 
-      "\:5e94\:8be5\:4e3a1"}], "*)"}], "\[IndentingNewLine]", 
+        RowBox[{"All", ",", "2"}], "]"}], "]"}], "]"}]}], " ", ";"}], "   ", 
+   RowBox[{"(*", 
+    RowBox[{
+    "\:76f8\:5bf9\:5149\:8c31\:5cf0\:503c\:5927\:5c0f", "\:ff0c", 
+     "\:5e94\:8be5\:4e3a1"}], "*)"}], "\[IndentingNewLine]", 
+   RowBox[{
     RowBox[{
      RowBox[{"amberSpd", "[", 
       RowBox[{"[", 
@@ -59,19 +60,37 @@ Cell[BoxData[
     ";"}], "   ", 
    RowBox[{"(*", " ", "\:5f52\:4e00\:5316", "*)"}], "\[IndentingNewLine]", 
    "\[IndentingNewLine]", 
-   RowBox[{
-    RowBox[{"Select", "[", 
-     RowBox[{
-      RowBox[{"amberSpd", "[", 
-       RowBox[{"[", 
-        RowBox[{"All", ",", "2"}], "]"}], "]"}], ",", 
-      RowBox[{
-       RowBox[{"#", "\[GreaterEqual]", "1"}], "&"}]}], "]"}], ";"}], "   ", 
    RowBox[{"(*", 
     RowBox[{
-    "\:67e5\:770b\:5cf0\:503c\:6ce2\:957f\:7684\:4e2a\:6570", "\:ff0c", 
-     "\:5e0c\:671b\:4e3a1\:4e2a"}], "*)"}], "\[IndentingNewLine]", 
-   "\[IndentingNewLine]", 
+     RowBox[{"Select", "[", 
+      RowBox[{
+       RowBox[{"amberSpd", "[", 
+        RowBox[{"[", 
+         RowBox[{"All", ",", "2"}], "]"}], "]"}], ",", 
+       RowBox[{
+        RowBox[{"#", "\[GreaterEqual]", "1"}], "&"}]}], "]"}], ";"}], "   ", 
+    RowBox[{"(*", 
+     RowBox[{
+     "\:67e5\:770b\:5cf0\:503c\:6ce2\:957f\:7684\:4e2a\:6570", "\:ff0c", 
+      "\:5e0c\:671b\:4e3a1\:4e2a"}], "*)"}], "*)"}], "\[IndentingNewLine]", 
+   RowBox[{"(*", 
+    RowBox[{
+     RowBox[{"Nearest", "[", 
+      RowBox[{
+       RowBox[{"amberSpd", "[", 
+        RowBox[{"[", 
+         RowBox[{"All", ",", "2"}], "]"}], "]"}], ",", "1", ",", "4"}], "]"}],
+      " ", "\[IndentingNewLine]", 
+     RowBox[{"Nearest", "[", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"amberSpd", "[", 
+         RowBox[{"[", 
+          RowBox[{"All", ",", "2"}], "]"}], "]"}], "\[Rule]", 
+        RowBox[{"amberSpd", "[", 
+         RowBox[{"[", 
+          RowBox[{"All", ",", "1"}], "]"}], "]"}]}], ",", "1", ",", "4"}], 
+      "]"}]}], " ", "*)"}], "\[IndentingNewLine]", 
    RowBox[{
     RowBox[{"amberCenterLamda", "=", 
      RowBox[{"Nearest", "[", 
@@ -82,10 +101,44 @@ Cell[BoxData[
           RowBox[{"All", ",", "2"}], "]"}], "]"}], "\[Rule]", 
         RowBox[{"amberSpd", "[", 
          RowBox[{"[", 
-          RowBox[{"All", ",", "1"}], "]"}], "]"}]}], ",", "maxAmberSpd"}], 
-      "]"}]}], " ", ";", "       ", 
+          RowBox[{"All", ",", "1"}], "]"}], "]"}]}], ",", "1"}], "]"}]}], " ",
+     ";", "       ", 
     RowBox[{"(*", "\:5cf0\:503c\:5904\:5bf9\:5e94\:7684\:6ce2\:957f", "*)"}], 
-    "\[IndentingNewLine]", 
+    "\[IndentingNewLine]", "\[IndentingNewLine]", 
+    RowBox[{"(*", 
+     RowBox[{
+      RowBox[{"Nearest", "[", 
+       RowBox[{
+        RowBox[{"amberSpd", "[", 
+         RowBox[{"[", 
+          RowBox[{"All", ",", "2"}], "]"}], "]"}], ",", "0.5", ",", "4"}], 
+       "]"}], "\[IndentingNewLine]", 
+      RowBox[{"Nearest", "[", 
+       RowBox[{
+        RowBox[{"amberSpd", "[", 
+         RowBox[{"[", 
+          RowBox[{"All", ",", "2"}], "]"}], "]"}], ",", "0.5", ",", "2"}], 
+       "]"}], "\[IndentingNewLine]", 
+      RowBox[{"Nearest", "[", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"amberSpd", "[", 
+          RowBox[{"[", 
+           RowBox[{"All", ",", "2"}], "]"}], "]"}], "\[Rule]", 
+         RowBox[{"amberSpd", "[", 
+          RowBox[{"[", 
+           RowBox[{"All", ",", "1"}], "]"}], "]"}]}], ",", "0.5", ",", "4"}], 
+       "]"}], "\[IndentingNewLine]", 
+      RowBox[{"Nearest", "[", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"amberSpd", "[", 
+          RowBox[{"[", 
+           RowBox[{"All", ",", "2"}], "]"}], "]"}], "\[Rule]", 
+         RowBox[{"amberSpd", "[", 
+          RowBox[{"[", 
+           RowBox[{"All", ",", "1"}], "]"}], "]"}]}], ",", "0.5", ",", "2"}], 
+       "]"}]}], "*)"}], "\[IndentingNewLine]", "\[IndentingNewLine]", 
     RowBox[{"amberHwList", "=", 
      RowBox[{"Nearest", "[", 
       RowBox[{
@@ -95,8 +148,8 @@ Cell[BoxData[
           RowBox[{"All", ",", "2"}], "]"}], "]"}], "\[Rule]", 
         RowBox[{"amberSpd", "[", 
          RowBox[{"[", 
-          RowBox[{"All", ",", "1"}], "]"}], "]"}]}], ",", 
-       RowBox[{"maxAmberSpd", "/", "2"}], ",", "2"}], "]"}]}], ";", "    ", 
+          RowBox[{"All", ",", "1"}], "]"}], "]"}]}], ",", "0.5", ",", "2"}], 
+      "]"}]}], ";", "    ", 
     RowBox[{
     "(*", "spd\:6570\:503c\:4e3a\:5cf0\:503c\:6ce2\:957f\:7684\:4e00\:534a\
 \:7684\:5de6\:53f3\:4e24\:70b9\:6ce2\:957f\:5750\:6807", "*)"}], 
@@ -196,7 +249,12 @@ Cell[BoxData[
    3.6562826774565563`*^9}, {3.6562827191421795`*^9, 3.656282727146487*^9}, {
    3.6562827845560703`*^9, 3.6562827967471523`*^9}, {3.6562828440156765`*^9, 
    3.656282844506998*^9}, {3.656282888442094*^9, 3.6562829086805143`*^9}, {
-   3.6562829560079136`*^9, 3.656282956707381*^9}}],
+   3.6562829560079136`*^9, 3.656282956707381*^9}, {3.6562848709703107`*^9, 
+   3.6562848775896983`*^9}, {3.6562849261303444`*^9, 
+   3.6562849545491886`*^9}, {3.6562852210609255`*^9, 
+   3.6562852358547306`*^9}, {3.65628527008743*^9, 3.656285329509457*^9}, 
+   3.6562853624646683`*^9, {3.6562854648903694`*^9, 3.656285492855914*^9}, {
+   3.6562855731676984`*^9, 3.656285629545622*^9}}],
 
 Cell[BoxData[
  GraphicsBox[{{}, {{}, 
@@ -425,7 +483,10 @@ N5V404g3nXj3EW8GrZcHaD0n6fH/AUMDgyg=
    3.656282026502145*^9}, {3.65628213856962*^9, 3.656282173190595*^9}, 
    3.656282209569718*^9, {3.656282287485672*^9, 3.6562823009415946`*^9}, 
    3.6562826821036363`*^9, 3.6562827197866077`*^9, 3.6562827986524153`*^9, 
-   3.656282845112402*^9, {3.656282891507127*^9, 3.65628291420718*^9}}]
+   3.656282845112402*^9, {3.656282891507127*^9, 3.65628291420718*^9}, {
+   3.6562849504524727`*^9, 3.656284956000157*^9}, {3.6562852106894255`*^9, 
+   3.6562852289381456`*^9}, 3.6562853787434626`*^9, {3.6562854704190345`*^9, 
+   3.6562854932982063`*^9}, 3.656285579412842*^9, 3.656285633699375*^9}]
 }, Open  ]],
 
 Cell[BoxData[
@@ -1134,10 +1195,10 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[CellGroupData[{
-Cell[579, 22, 8269, 176, 332, "Input"],
-Cell[8851, 200, 13561, 227, 262, "Output"]
+Cell[579, 22, 10446, 234, 472, "Input"],
+Cell[11028, 258, 13789, 230, 262, "Output"]
 }, Open  ]],
-Cell[22427, 430, 26385, 686, 1692, "Input"]
+Cell[24832, 491, 26385, 686, 1692, "Input"]
 }
 ]
 *)
