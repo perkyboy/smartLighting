@@ -1,5 +1,5 @@
 # smartLighting
-issue 0001: amberCenterLamda = 
+issue 00001: amberCenterLamda = 
   Nearest[amberSpd[[All, 2]] -> amberSpd[[All, 1]], 
      1] ;     using 1 to repalce maxAmberSpd (or other color leds)
 
